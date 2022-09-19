@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Oswald:wght@700&display=swap');
+
+.App {
+  text-align: center;
+  background-color: #9147ff;
+  font-family: 'Inter', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #111;
+}
+
+.app-container {
+  margin: auto;
+}
+
+.App-logo {
+  width: 50%;
+  height: auto;
+  max-width: 350px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header p {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  /* color: #111; */
+}
+
+main {
+  margin-top: 32px;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #111;
+  color: #FFF;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+main article span {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 2px;
+  transform: translate(-4px);
+}
+
+main article h2 {
+  font-size: 38px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+main article p {
+  margin: 0;
+  font-weight: 500;
+}
+
+main form {
+  display: flex;
+}
+
+main form input {
+  background-color: #111;
+  color: #FFF;
+  border: none;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.number {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number button {
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0px 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFF;
+  transition: 0.24s;
+}
+
+.number button:hover {
+  background-color: #111;
+}
