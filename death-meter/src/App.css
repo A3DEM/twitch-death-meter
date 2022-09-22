@@ -9,11 +9,31 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
   color: #111;
 }
 
 .app-container {
   margin: auto;
+  padding: 32px;
+}
+
+.signature {
+  margin-top: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.signature img {
+  height: 25px;
+  width: 25px;
+  margin: 0px 8px;
+}
+.react-logo {
+
+  animation: App-logo-spin infinite 20s linear;
 }
 
 .App-logo {
@@ -103,7 +123,7 @@ main form input {
 }
 
 .number {
-  margin-top: 16px;
+  margin-top: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,8 +139,26 @@ main form input {
   border-radius: 8px;
   background-color: #FFF;
   transition: 0.24s;
+  cursor: pointer;
+  position: absolute;
 }
 
 .number button:hover {
   background-color: #111;
+}
+
+.slot {
+  position: relative;
+  perspective: 1000px;
+}
+
+.slot div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
 }
